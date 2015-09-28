@@ -7599,19 +7599,13 @@ label.error {
 .modal-backdrop.in {
   opacity: 0.8; }
 
-/* line 3, components/_fonts.scss */
-* {
-  -webkit-font-smoothing: none; }
+/* line 4, components/_fonts.scss */
+h1, h2, h3, h4, h5, h6, .heading {
+  font-weight: 600; }
 
 /* line 7, components/_fonts.scss */
-h1, h2, h3, h4, h5, h6, .heading {
-  font-weight: 600;
-  -webkit-font-smoothing: none; }
-
-/* line 11, components/_fonts.scss */
 b {
-  font-weight: 700;
-  -webkit-font-smoothing: none; }
+  font-weight: 700; }
 
 /* line 1, components/_landing.scss */
 .teaser-container {
