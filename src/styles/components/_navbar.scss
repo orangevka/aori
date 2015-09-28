@@ -41,6 +41,12 @@
 	padding: 5px 10px;
 	box-shadow:none;
 	vertical-align:middle;
+	
+	&:hover, &:active, &:focus {
+		background: #5A8DC1;
+		color: #fff;
+	}
+	
   }
 
   // Prevent floats from breaking the navbar
