@@ -24,6 +24,7 @@
 @import "components/tariffs";
 @import "components/carousel";
 @import "components/questions";
+@import "components/helper";
 
 
 html{
@@ -47,14 +48,15 @@ body {
 }
 
 .main-wrapper-outer {
-  max-width: 1220px;
+  width:100%;
   min-width: 963px;
   min-height: 100%;
-  display: inline-block;
+  padding:0;
+  overflow:hidden;
 }
 
 .main-wrapper-inner {
-  width: 100%;
+  max-width: 1220px;
   background: transparent;
   display: inline-block;
   text-align: initial;
@@ -74,11 +76,9 @@ ul {
 .panel-inner {
   background: transparent;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
-  font-family: 'Open Sans Semibold';
 
   &:hover {
     text-decoration: none;
@@ -103,4 +103,39 @@ label {
 .intro {
 	font-size: $jumbotron-intro-font-size;
 	color: $landing-color;
+}
+
+
+@media screen and (max-width: $screen-sm-min) {
+	.main-wrapper-outer {
+		width:100%;
+		min-width: 300px;
+	}
+	.jumbotron {
+		h1 {
+			margin-top:0;
+			font-size: 26px;
+		}
+		.pull-right {
+			padding-left:20px;
+			padding-right:20px;
+		}
+	}
+	.landing {
+		.form-control {
+			display:block;
+			width:100%;
+			margin-right:0;
+			margin-left:0;
+			margin-bottom:10px;
+		}
+		.btn-primary {
+			display:block;
+			width:100%;
+		}
+	}
+	.tariffs {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
 }

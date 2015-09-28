@@ -1,9 +1,10 @@
 #footer {
-  padding: 20px 0;
+  padding: 20px 0 0;
   background:rgba(234, 237, 241, 0.7) url(../images/pattern.png) 50% repeat;
   font-size: 13px;
   line-height: 18px;
   color: #878c8e;
+  position:relative;
   
   .logo {
 	display:inline-block;
@@ -28,17 +29,23 @@
 		background:url(../images/phone.svg) 0 0 no-repeat;
 	}
   }
- .email {
-	.ico {
-		background:url(../images/mail.svg) 0 0 no-repeat;
-	}
-  }
-  a {
+	a {
       color: #878c8e;
       text-decoration:underline;
 	  font-weight:400;
 	  font-family: 'Open Sans';
     }
-  
+  .email {
+	text-decoration:none;
+	.ico {
+		background:url(../images/mail.svg) 0 0 no-repeat;
+	}
+	
   }
+  .main-wrapper-outer {
+	max-width:1220px;
+	position:relative;
+	padding-bottom:40px;
+  }
+}
 

@@ -16,9 +16,9 @@
 	display:inline-block;
 	width:32.3%;
 	padding: 0;
-	-webkit-box-shadow: 0px 2px 2px 0px rgba(228,227,223,1);
-	-moz-box-shadow: 0px 2px 2px 0px rgba(228,227,223,1);
-	box-shadow: 0px 2px 2px 0px rgba(228,227,223,1);
+	-webkit-box-shadow: 0px 2px 0px 0px rgba(228,227,223,1);
+	-moz-box-shadow: 0px 2px 0px 0px rgba(228,227,223,1);
+	box-shadow: 0px 2px 0px 0px rgba(228,227,223,1);
   }
   h3 {
 		font-size:15px;
@@ -45,6 +45,8 @@
   li {
     text-align:left;
 	font-size:$font-size-h4;
+	background:url(../images/tarif-check.svg) no-repeat 0 5px;
+	padding-left:20px;
   }
   .slogan {
 	text-transform:uppercase;
@@ -81,6 +83,18 @@
 		margin:10px auto;
 		max-width:600px;
 		line-height:17px;
+	}
+	@media screen and (max-width: $screen-xs-min) {
+		.intro {
+			width:80%;
+			margin:0 auto 15px;
+		}
+		.col-md-4 {
+			width:100%;
+			max-width:220px;
+			display:block;
+			margin:0 auto 20px;
+		}
 	}
 
 }

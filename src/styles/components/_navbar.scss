@@ -24,6 +24,11 @@
 	margin-right:40px;
 	color:#B5B7BE;
 	font-size:16px;
+	
+	span {
+		dispay:inline-block;
+		vertical-align:middle;
+	}
   }
   .btn, .btn:hover, .btn:active, .btn:focus {
 	margin-left:10px;
@@ -32,10 +37,10 @@
 	border:1px solid #5A8DC1;
 	color: #5A8DC1;
 	position:relative;
-	top:-2px;
 	height: auto;
-	padding: 5px 12px;
+	padding: 5px 10px;
 	box-shadow:none;
+	vertical-align:middle;
   }
 
   // Prevent floats from breaking the navbar
@@ -683,3 +688,9 @@
     }
   }
 }
+@media screen and (max-width: $screen-xs-min) {
+		.pull-right {
+			float:none !important;
+			margin-top:10px;
+		}
+	}
