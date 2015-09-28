@@ -6,6 +6,9 @@
   color: #878c8e;
   position:relative;
   
+  p {
+	margin-bottom:7px;
+  }
   .logo {
 	display:inline-block;
 	margin-top:20px;
@@ -31,12 +34,14 @@
   }
 	a {
       color: #878c8e;
-      text-decoration:underline;
+      text-decoration:none;
+	  border-bottom:1px solid #878c8e;
 	  font-weight:400;
 	  font-family: 'Open Sans';
     }
   .email {
 	text-decoration:none;
+	border:none;
 	.ico {
 		background:url(../images/mail.svg) 0 0 no-repeat;
 	}

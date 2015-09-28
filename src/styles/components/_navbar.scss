@@ -8,6 +8,12 @@
 // Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
+.navbar-wrapper {
+	width:100%; 
+	max-width:1220px;
+	margin:0 auto;
+}
+
 .navbar {
   position: relative;
   min-height: $navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)

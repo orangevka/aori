@@ -42,6 +42,7 @@
   h1,
   .h1 {
     color: $jumbotron-heading-color;
+	margin-bottom:20px;
   }
 
   p {
@@ -111,6 +112,11 @@
 			font-size:12px;
 			color:#9C9DA5;
 		}
+		h3 {
+			font-size:16px;
+			color:#29292E;
+			line-height:22px;
+		}
 		h3, p, .cards {
 			margin-left:60px;
 			margin-top:0;
@@ -122,7 +128,7 @@
 		}
 	}
 	.pull-right {
-		padding-right:65px;
+		padding-right:55px;
 		
 		p, h1 {
 			padding-left:30px;
@@ -132,8 +138,9 @@
 		}
 	}
 	.pic-services {
-		margin-right: 20px;
+		margin-right: 10px;
 		display:inline-block;
+		vertical-align:top;
 	}
 	.pic-services[alt="Yandex"] {
 		margin-left:30px;
