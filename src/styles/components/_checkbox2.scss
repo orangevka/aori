@@ -1,0 +1,120 @@
+	.checkbox {
+
+		&.highlight {
+
+			// padding: 4px;
+
+			& + .checkbox.highlight {
+				margin-top: -5px;
+			}
+
+			& label.checkbox-custom {
+				padding: 4px 4px 4px 24px;
+				//margin-left: -8px;
+			}
+
+			&.checked label.checkbox-custom, label.checked.checkbox-custom {
+				background: #999;
+				border-radius: 1px;
+			}
+		}
+
+		/* for keyboard tabbing */
+		input[type="checkbox"]:focus + .checkbox-label,
+		input[type="checkbox"]:hover + .checkbox-label,
+		.checkbox-label:hover
+		 {
+			color: #ccc;
+		}
+
+		input[type="checkbox"]:disabled:focus + .checkbox-label,
+		input[type="checkbox"]:disabled:hover + .checkbox-label,
+		&.disabled label:hover
+		 {
+			color: inherit;
+		}
+
+	}
+
+	.form-horizontal .checkbox-inline {
+		padding-top: 0;
+	}
+
+	.input-group-addon.checkbox-custom.checkbox-inline:before {
+		left: 11px;
+		top: 9px;
+	}
+
+	.checkbox-custom {
+		position: relative;
+
+		&:before {
+			background:#fff;
+			font-style: normal !important;
+			font-weight: normal !important;
+			font-variant: normal !important;
+			text-transform: none !important;
+			line-height: 1;
+			speak: none;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			border: 1px solid #aaaaaa;
+			border-radius: 4px;
+			color: #000;
+			font-size: 12px;
+			content: " ";
+			height: 20px;
+			left: 0px;
+			padding: 1px 0 0 1px;
+			position: absolute;
+			top: 0;
+			width: 20px;
+		}
+		/* for keyboard tabbing */
+		&:active:before, &:focus:before {
+			color: #000;
+			cursor: pointer;
+			box-shadow: inset 0px 0px 2px 1px #eee, 0px 0px 5px 0px #eee;
+		}
+
+		&.highlight {
+			&:before {
+				left: 4px;
+				top: 6px;
+			}
+		}
+
+		&.checked {
+			&:before {
+				content: " ";
+				background-image:url(../images/checkbox-check.svg);
+				background-repeat:no-repeat;
+				background-position: 3px 5px;
+			}
+		}
+
+		&.disabled {
+			cursor: not-allowed;
+			opacity: .65;
+
+			&:before
+			{
+				cursor: not-allowed;
+				opacity: .65;
+			}
+		}
+
+		
+
+
+		/* for keyboard tabbing */
+		input[type="checkbox"]:focus + .checkbox-label {
+			color: #ccc;
+		}
+
+	}
+
+	label.checkbox-custom.checkbox-inline {
+		padding-left: 20px;
+	}
+
